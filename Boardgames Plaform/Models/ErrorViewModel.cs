@@ -1,6 +1,6 @@
 using System;
 
-namespace Boardgames_Plaform.Models
+namespace Boardgames_Platform.Models
 {
     public class ErrorViewModel
     {
