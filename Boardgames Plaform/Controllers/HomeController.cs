@@ -1,4 +1,4 @@
-﻿using Boardgames_Plaform.Models;
+﻿using Boardgames_Platform.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -22,7 +22,19 @@ namespace Boardgames_Plaform.Controllers
         {
             return View();
         }
+        public ActionResult About()
+        {
+            return View();
+        }
+        public ActionResult BorrowService()
+        {
+            return RedirectToAction("Index", "BoardgamesController");
+        }
 
+        public ActionResult Contact()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
